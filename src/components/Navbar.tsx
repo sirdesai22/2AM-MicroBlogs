@@ -24,7 +24,7 @@ const Navbar = (props: Props) => {
         <div className='flex h-10 gap-3 items-center'>
             {/* <h1>Hello, {props.userName}</h1> */}
             <button onClick={handleSignOut} className='px-3 py-2 bg-red-500 rounded-md font-semibold'>Sign out</button>
-            <img src={props.image} alt=""  className='bg-red-300 rounded-full max-h-full'/>
+            <img onClick={() => {window.location.href = `/dashboard/${props.userName}`}} src={props.image} alt=""  className='bg-red-300 rounded-full max-h-full cursor-pointer hover:shadow-md hover:scale-110'/>
         </div>
     </div>
   )

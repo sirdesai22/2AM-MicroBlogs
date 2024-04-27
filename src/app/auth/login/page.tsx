@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { auth, googleProvider } from "../../../config/firebase-config";
 import { onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 
+
 type Props = {};
 
 const page = (props: Props) => {
@@ -18,7 +19,7 @@ const page = (props: Props) => {
   const handleLogin = () => {
     try {
       signInWithPopup(auth, googleProvider).then(() => {
-        window.location.href = "/home";
+          window.location.href = "/home";
       });
     } catch (error) {
       console.error("Error signing in with Google", error);

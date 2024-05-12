@@ -8,7 +8,7 @@ import convertTime from "@/hooks/convertTime";
 
 type Props = {};
 
-const page = (props: Props) => {
+const Dashboard = (props: Props) => {
   const [userName, setUserName] = useState("John Doe");
 
   useEffect(() => {
@@ -74,4 +74,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Dashboard;

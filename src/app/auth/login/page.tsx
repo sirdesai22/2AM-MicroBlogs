@@ -7,7 +7,7 @@ import { onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 
 type Props = {};
 
-const page = (props: Props) => {
+const Login = (props: Props) => {
   // const [user, setUser] = useState(false);
 
   onAuthStateChanged(auth, (user) => {
@@ -101,4 +101,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Login;

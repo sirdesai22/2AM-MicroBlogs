@@ -9,7 +9,7 @@ import convertTime from "@/hooks/convertTime";
 
 type Props = {};
 
-const page = (props: Props) => {
+const Home = (props: Props) => {
   const [content, setContent] = useState("");
   const [wordLength, setWordLength] = useState(0);
   const [userName, setUserName] = useState("John Doe");
@@ -129,4 +129,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Home;

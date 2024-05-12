@@ -2,7 +2,7 @@
 import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
 
-export default function Home() {
+export default function Main() {
 
   const getStarted = () => {
     window.location.href = '/auth/login'
